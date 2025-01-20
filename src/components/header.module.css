@@ -1,0 +1,80 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 24px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	align-self: stretch;
+}
+a {
+	padding: 8px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	border-radius: 8px;
+	background: radial-gradient(
+		280.39% 83.75% at 50% 50%,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(103, 181, 102, 0.5) 100%
+	);
+
+	backdrop-filter: blur(12px);
+	color: var(--Style, #fff);
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 19.6px */
+	position: relative;
+	text-decoration: none;
+	z-index: 1;
+	overflow: hidden;
+}
+a::after {
+	content: "";
+	position: absolute;
+	top: -1.8px; /* Adjust to match border thickness */
+	left: -5px; /* Adjust to match border thickness */
+	right: -5px; /* Adjust to match border thickness */
+	bottom: -1.8px; /* Adjust to match border thickness */
+	border-radius: 8px; /* Match the border-radius of the parent */
+	background: linear-gradient(
+		0.25turn,
+		rgba(0, 0, 0, 0),
+		rgba(129, 255, 106, 1),
+		rgba(0, 0, 0, 0)
+	);
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 100%,
+		0% 100%,
+		0% 0%,
+		2px 2px,
+		2px calc(100% - 2px),
+		calc(100% - 2px) calc(100% - 2px),
+		calc(100% - 2px) 2px,
+		2px 2px
+	); /* Clip the inner part */
+	z-index: -1; /* Place it behind the content */
+	animation: glowing 3s linear infinite; /* Animation */
+}
+.headerLeft {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 10px;
+	flex: 1 0 0;
+}
+
+.headerRight {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 10px;
+	flex: 1 0 0;
+}

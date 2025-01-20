@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Ysabeau+SC:wght@1..1000&display=swap");
+
+/* tokenallocation container  */
+
+.TA_C {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 42px;
+	align-self: stretch;
+	background: #0e1215;
+}
+
+/* TOKENALLOCATION TITLE && FIRST CONTANER */
+
+.TA_FC_T {
+	align-self: stretch;
+	text-align: center;
+	font-family: "IBM Plex Mono", serif;
+	font-size: 52px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	background: linear-gradient(
+		180deg,
+		#fff 0%,
+		#070322 139.86%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* TAKENALLOCATION SECOND CONTAINER */
+
+.TA_SC {
+	display: flex;
+	padding-top: 42px;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	align-self: stretch;
+}
+
+/* TAKENALLOCATION SECOND CONTAINER FIRST FRAME  */
+.TA_SC_FF {
+	display: flex;
+	/* width: 100%; */
+	justify-content: center;
+	align-items: flex-start;
+	gap: 80px;
+}
+
+/* TANKEN ALLOCATION SECOND CONTAINER FIRST FRAME PERCENTAGE CONTAINER  */
+.TA_SC_FF_PC {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	flex: 1 0 0;
+}
+
+/* TANKEN ALLOCATION SECOND CONTAINER FIRST FRAME PERCENTAGE CONTAINER PERCENTAGE FRAME  */
+
+.TA_SC_FF_PC_PF {
+	width: 162.113px;
+	height: 162.113px;
+	position: relative;
+}
+
+/* TANKEN ALLOCATION SECOND CONTAINER FIRST FRAME PERCENTAGE CONTAINER PERCENTAGE FRAME -> NUMBER PERSENTAGE  */
+.TA_SC_FF_PC_PF_NP {
+	position: absolute;
+	text-align: center;
+	font-family: "IBM Plex Mono", serif;
+	font-size: 52px;
+	right: 38px;
+	top: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	background: linear-gradient(
+		180deg,
+		#fff 0%,
+		#070322 139.86%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* TANKEN ALLOCATION SECOND CONTAINER FIRST FRAME PERCENTAGE CONTAINER PERCENTAGE FRAME -> iMAGE PERSENTAGE  */
+.TA_SC_FF_PC_PF_IP {
+	position: absolute;
+	right: 0;
+}
+/* TANKEN ALLOCATION SECOND CONTAINER FIRST FRAME PERCENTAGE CONTAINER TEXT FRAME  */
+
+.TA_SC_FF_PC_TF {
+	color: rgba(255, 255, 255, 0.76);
+	text-align: center;
+	font-family: "IBM Plex Mono", serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* TAKEN ALLOCATION THIRD CONTAINER  */
+
+.TA_TC {
+	display: flex;
+	padding: 0px 24px 0px 24px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 32px;
+	align-self: stretch;
+}
+
+
+/*  TAKEN ALLOCATION THIRD CONTAINER BOX CONTENT */
+.TA_TC_BC {
+	display: flex;
+	padding: 20px 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	border-radius: 24px;
+	border: 1px solid rgba(69, 69, 69, 0);
+	background: radial-gradient(
+		103.99% 98.86% at 50% 50%,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(103, 181, 102, 0.05) 100%
+	);
+	backdrop-filter: blur(12px);
+	@media screen and (min-width: 1024px) {
+		width: 341px;
+	}
+}
+
+/* TAKEN ALLOCATION THIRD CONTAINER BOX CONTENT FIRST LINE */
+.TA_TC_BC_FL {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	@media screen and (min-width: 1024px) {
+		width: 277px;
+	}
+}
+
+/* TAKEN ALLOCATION THIRD CONTAINER BOX CONTENT FIRST LINE  -> TEXT */
+.TA_TC_BC_FL_T {
+	flex: 1 0 0;
+	color: var(--Linear, #27ff00);
+	font-family: "IBM Plex Mono", serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* TAKEN ALLOCATION THIRD CONTAINER BOX CONTENT FIRST LINE  -> NUM */
+.TA_TC_BC_FL_N {
+	color: #27ff00;
+	text-align: right;
+	font-family: "IBM Plex Mono", serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	width: 58px;
+	flex-shrink: 0;
+}
+
+/* TAKEN ALLOCATION THIRD CONTAINER BOX CONTENT SECOND LINE  -> TEXT */
+
+.TA_TC_BC_SL_T {
+	max-width: 100%;
+	color: #fff;
+	text-align: justify;
+	font-family: "Schibsted Grotesk", serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	@media screen and (min-width: 1024px) {
+		width: 277px;
+	}
+}
