@@ -12,7 +12,7 @@ export default function TokenAllocation() {
 							className={Style["TA_SC_FF_PC_PF"]}
 						>
 							<img
-								src="./../../public/five.png"
+								src="five.png"
 								alt=""
 								className={
 									Style["TA_SC_FF_PC_PF_IP"]
@@ -37,7 +37,7 @@ export default function TokenAllocation() {
 							className={Style["TA_SC_FF_PC_PF"]}
 						>
 							<img
-								src="./../../public/fifteen.png"
+								src="fifteen.png"
 								alt=""
 								className={
 									Style["TA_SC_FF_PC_PF_IP"]
@@ -62,7 +62,7 @@ export default function TokenAllocation() {
 							className={Style["TA_SC_FF_PC_PF"]}
 						>
 							<img
-								src="./../../public/seven.png"
+								src="seven.png"
 								alt=""
 								className={
 									Style["TA_SC_FF_PC_PF_IP"]
